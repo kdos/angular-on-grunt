@@ -1,0 +1,1144 @@
+body {
+    padding: 0;
+    margin: 0px auto;
+    background: #eee;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Muli, arial;
+    font-size: 1.8em;
+}
+
+div {
+    padding: 3px 0px;
+}
+
+@media (max-width: 768px) {
+    .mobile__set {
+        position: relative;
+        top: -40px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.navbar__seller,
+.navbar__seller.nav-header {
+    background-color: white !important;
+    color: black !important;
+    height: 8vh;
+    box-shadow: 3px 2px 2px #888888;
+    float: none !important;
+    margin-bottom: 14px;
+}
+
+.navbar__seller__a {
+    margin-left: auto;
+    left: 4px;
+    top: -5px;
+    margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+    .navbar-header {
+        padding-left: 15px;
+    }
+    .navbar__activity__a {
+        margin-left: auto;
+        left: 4px;
+        top: -5px;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+    .navbar-header {
+        padding-left: 60px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 992px) {
+    .navbar-header {
+        padding-left: 9vw;
+    }
+    .navbar__activity__a {
+        margin-left: auto;
+        position: relative;
+        left: -17px;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 993px) {
+    .navbar-header {
+        padding-left: 4vw;
+    }
+    .navbar__activity__a {
+        margin-left: auto;
+        position: relative;
+        left: -25px;
+        margin-top: 5px;
+    }
+}
+
+.loginBox {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px 3px;
+    min-width: 320px;
+}
+
+@media(min-width: 480px) {
+    .loginBox {
+        width: 480px;
+    }
+}
+
+.activityBox {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px 3px;
+    min-width: 320px;
+}
+
+@media(min-width: 480px) {
+    .activityBox {
+        width: 430px;
+    }
+}
+
+.loginBox__div {
+    padding: 1em 2em;
+}
+
+.loginBox__div1 {
+    padding: 1em 2em;
+}
+@media (max-width: 460px) {
+    .loginBox__div1 {
+        padding: 5px 10px;
+    }
+}
+/**************************************
+            custom buttons
+**************************************/
+
+.btn {
+    text-transform: none !important;
+  
+}
+
+.btn:hover {
+    
+}
+
+.btn-select {
+    color: white !important;
+    background-color: #F05F71 !important;
+    border-color: #F05F71 !important;
+}
+
+.btn-select:hover {
+    color: white;
+}
+
+.btn-grey {
+    background-color: #cdcdcd !important;
+    border-color: #cdcdee !important;
+}
+
+.btn-bright {
+    color: white !important;
+    background-color: #00FFFF !important;
+    border-color: #00FFF1;
+}
+
+.text-light{
+    font-weight: thinner;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.icon-gap{
+    padding-right: 5px;
+}
+
+.space-xs-bottom{
+    padding-bottom: 10px;
+}
+
+.space-xs-left{
+    padding-left: 10px !important;
+}
+/**************input groups *****************/
+
+.group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: calc(100% - 2px);
+    margin-left: 0px;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 10px 10px 10px 5px;
+    font-size: 1em;
+    color: #cdcdea;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    outline: none;
+}
+/* LABEL ======================================= */
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 15px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+/* active state */
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -10px;
+    font-size: 14px;
+    color: #F05F71;
+}
+
+input:invalid {
+    
+}
+/* BOTTOM BARS ================================= */
+
+.bar {
+    position: relative;
+    display: block;
+    width: inherit;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+/* active state */
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+    width: 50%;
+}
+/* social icons*/
+
+.social-buttons {
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+}
+
+.social-button {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    opacity: .99;
+    border-radius: 60%;
+}
+
+.social-button .fa {
+    font-size: 38px;
+    vertical-align: middle;
+    color: white;
+}
+
+.social-button.facebook {
+    background-color: #3b5998;
+}
+
+.social-button.twitter {
+    background-color: #4099FF;
+}
+
+.social-button.google {
+    background-color: #d34836;
+}
+
+.social-button:hover {
+    opacity: .85;
+    transform: scale(1.1);
+}
+/* class "loginBox__sep"*/
+
+.loginBox__hr {
+    height: 1px;
+    border: 0;
+    color: #333;
+    background-color: #333;
+    width: 38%;
+}
+
+.loginBox__hr__left {
+    margin: 18px 0;
+    float: left;
+}
+
+.loginBox__hr__right {
+    margin: 18px 0;
+    float: right;
+}
+
+.loginBox__p {
+    float: left;
+    margin-left: 31px;
+}
+
+.btn {
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.text-align {
+    position: relative;
+    left: -63px;
+    top: 2px;
+}
+/*****************************************
+            company sign up page
+*****************************************/
+
+@media (min-width: 767px) {
+    .signup2 {
+        height: 80vh;
+    }
+    .progress {
+        height: 2px;
+        padding: 0px 0px !important;
+        width: inherit;
+        left: -1vw;
+        top: -15px;
+        position: relative;
+    }
+    .company .input__half {
+        width: calc(68% - 2px);
+        float: right;
+        position: relative;
+        top: -10px;
+    }
+    .company .input__half input:focus ~ label,
+    .company .input__half input:valid ~ label {
+        top: 50px;
+        font-size: 14px;
+        color: #F05F71;
+        opacity: 0;
+    }
+    .signup2__icon {
+        float: left;
+        position: relative;
+        top: 31px;
+        left: -1px;
+    }
+    .loginBox__p1 {
+        float: left;
+        margin-left: .3vw;
+        font-size: 2rem;
+        position: relative;
+        top: 27px;
+    }
+}
+
+@media (max-width: 768px) {
+    .signup2 {
+        height: 85vh;
+    }
+    .progress {
+        height: 2px;
+        padding: 0px 0px !important;
+        width: inherit;
+        left: -1.4vw;
+        top: -15px;
+        position: relative;
+    }
+    .company .input__half {
+        width: calc(60% - 2px);
+        float: right;
+        position: relative;
+        top: -10px;
+        font-size: 20px;
+    }
+    .company .input__half input:focus ~ label,
+    .company .input__half input:valid ~ label {
+        top: 15px;
+        font-size: 14px;
+        color: #F05F71;
+    }
+    .company .bar {
+        width: calc(60% - 2px);
+    }
+    .signup2__icon {
+        float: left;
+        position: relative;
+        top: 35px
+    }
+    .loginBox__p1 {
+        float: left;
+        margin-left: 1.5vw;
+        font-size: 1.7rem;
+        position: relative;
+        top: 35px;
+    }
+}
+
+.signup2 div {
+    padding-top: 25px;
+}
+/** correction to input **/
+
+.company input {
+    width: calc(90% - 2px);
+}
+
+.company input:focus,
+input[type=number]:focus {
+    outline: none;
+}
+
+.company label {
+    top: 40px;
+    left: 30px;
+}
+
+.company .bar {
+    width: inherit;
+}
+
+.company input:focus ~ label,
+.company input:valid ~ label {
+    top: 5px;
+    font-size: 14px;
+    color: #F05F71;
+}
+
+.loginBox__h {
+    font-size: 1em;
+    top: -25px;
+    position: relative;
+}
+
+.loginBox__p2 {
+    padding: 2px;
+    position: relative;
+    top: 15px;
+    font-size: .8em;
+}
+
+.btn__align {
+    width: 95%;
+}
+/****************************************
+        signup complete html
+****************************************/
+
+strong {
+    color: #F05F71;
+    font-weight: lighter;
+}
+
+.complete {
+    background-color: #51E390;
+    color: white;
+}
+
+.buffer {
+    padding-right: 3vw;
+}
+
+.button {
+    font-size: 1.2em;
+}
+
+.button i {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+    .complete__h2 {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .complete__h2 {
+        font-size: 1.2em;
+    }
+}
+/****************************************
+        add new activity html
+****************************************/
+
+.company__input__half {
+    float: left;
+}
+
+.company__p {
+    
+    font-size: 1.3rem;
+    position: relative;
+    top: 13px;
+}
+
+@media (min-width: 768px) {
+    .activity {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .activity {
+        height: 88vh;
+    }
+}
+
+.activity input{
+    width: calc(100% - 2px);
+    font-size: .8em;
+}
+
+.activity input:focus {
+    outline: none;
+}
+
+.activity input {
+    width: calc(90% - 2px);
+}
+
+.activity input:focus {
+    outline: none;
+}
+
+.activity label {
+    top: 40px;
+    left: 30px;
+}
+
+
+.activity__bar {
+    position: relative;
+    display: block;
+    width: inherit;
+}
+
+.activity__bar:before,
+.activity__bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.activity__bar:before {
+    left: 50%;
+}
+
+.activity__bar:after {
+    right: 50%;
+}
+/* active state */
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.activity__range {
+    font-size: .5em;
+    color: grey;
+    padding: 2px;
+    position: relative;
+    top: 15px;
+    float: right;
+}
+
+@media (min-width: 768px) {
+    .activity .input__half {
+        width: calc(70% - 2px);
+        float: left;
+        position: relative;
+        top: -10px;
+    }
+}
+/****************************************
+        details of activity html
+****************************************/
+
+@media (min-width: 768px) {
+    .details {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .details {
+        height: 90vh;
+    }
+}
+
+.details input {
+    width: calc(100% - 2px);
+    font-size: .8em;
+}
+
+.details input:focus {
+    outline: none;
+}
+
+.details input:focus,
+input[type=number]:focus {
+    outline: none;
+}
+
+.details label {
+    top: 40px;
+    left: 30px;
+}
+
+.details .bar{
+    width: inherit;
+}
+
+/***************************************
+          slots html
+***************************************/
+
+@media (min-width: 1120px) {
+    .slots__row {
+        margin-left: 34%;
+    }
+    .slots {
+        width: 437px;
+    }
+    .slots .row {
+        padding-left: 10px;
+    }
+    .slot__div {
+        width: 55px;
+        height: 55px;
+        font-size: .8em;
+        padding: 3px 5px;
+    }
+    .slot__div__select {
+        width: 382px;
+        height: 55px;
+        font-size: .8em;
+        padding: 3px 5px;
+        position: relative;
+        top: 8px;
+    }
+    .slot__div__pill {
+        border: 1px solid #cdcdcd;
+        border-radius: 50%;
+        color: grey;
+        padding-top: 9px;
+        padding-left: 7px;
+    }
+    .slots .progress {
+        width: 369px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+    .slots__row {
+        margin-left: 28%;
+    }
+    .slots {
+        width: 437px;
+    }
+    .slots .row {
+        padding-left: 10px;
+    }
+    .slot__div {
+        width: 55px;
+        height: 55px;
+        font-size: .8em;
+        padding: 3px 5px;
+    }
+    .slot__div__select {
+        width: 382px;
+        height: 55px;
+        font-size: .8em;
+        padding: 3px 5px;
+        position: relative;
+        top: 8px;
+    }
+    .slot__div__pill {
+        border: 1px solid #cdcdcd;
+        border-radius: 50%;
+        color: grey;
+        padding-top: 9px;
+        padding-left: 7px;
+    }
+    .slots .progress {
+        width: 369px;
+    }
+}
+
+@media (min-width: 730px) and (max-width: 992px) {
+    .slots__row {
+        margin-left: 19%;
+    }
+    .slots {
+        width: 437px;
+    }
+    .slots .row {
+        padding-left: 10px;
+    }
+    .slot__div {
+        width: 55px;
+        height: 55px;
+        font-size: .8em;
+        padding: 3px 5px;
+    }
+    .slot__div__select {
+        width: 382px;
+        height: 55px;
+        font-size: .8em;
+        padding: 3px 5px;
+        position: relative;
+        top: 8px;
+    }
+    .slot__div__pill {
+        border: 1px solid #cdcdcd;
+        border-radius: 50%;
+        color: grey;
+        padding-top: 9px;
+        padding-left: 7px;
+    }
+    .slots .progress {
+        width: 369px;
+    }
+}
+
+@media (min-width: 491px) and (max-width: 729px) {
+    .slots__row {
+        margin-left: 13%;
+    }
+    .slots {
+        width: 437px;
+    }
+    .slots .row {
+        padding-left: 10px;
+    }
+    .slot__div {
+        width: 55px;
+        height: 55px;
+        font-size: .8em;
+        padding: 3px 5px;
+    }
+    .slot__div__select {
+        width: 382px;
+        height: 55px;
+        font-size: .8em;
+        padding: 3px 5px;
+        position: relative;
+        top: 8px;
+    }
+    .slot__div__pill {
+        border: 1px solid #cdcdcd;
+        border-radius: 50%;
+        color: grey;
+        padding-top: 9px;
+        padding-left: 7px;
+    }
+    .slots .progress {
+        width: 369px;
+    }
+}
+
+@media (max-width: 490px) {
+    .slots {
+        width: 100vw;
+    }
+    .slot__div {
+        width: 12vw;
+        height: 5vw;
+        font-size: .6em;
+        padding: 3px 2px;
+    }
+    .slot__div__select {
+        width: 5.5vw;
+        height: 15vw;
+        font-size: .7em;
+        padding: 3px 5px;
+        position: relative;
+        top: 38px;
+        left: 64vw;
+        width: 24vw;
+    }
+    .slot__div__pill {
+        border: 1px solid #cdcdcd;
+        border-radius: 58%;
+        color: black;
+        padding-top: 6px;
+        padding-left: 7px;
+    }
+    .slot__div__pill__mon {
+        padding-top: 6px;
+        padding-left: 11px;
+    }
+    .slot__div__pill__tue {
+        padding-top: 6px;
+        padding-left: 11px;
+    }
+    .slot__div__pill__wed {
+        padding-top: 6px;
+        padding-left: 11px;
+    }
+    .slot__div__pill__thu {
+        padding-top: 6px;
+        padding-left: 11px;
+    }
+    .slot__div__pill__fri {
+        padding-top: 6px;
+        padding-left: 11px;
+    }
+    .slot__div__pill__sat {
+        padding-top: 6px;
+        padding-left: 11px;
+    }
+    .slot__div__pill__sun {
+        padding-top: 7px;
+        padding-left: 10px;
+    }
+
+}
+.slots .progress {
+    width: 369px;
+}
+.slots .company input {
+    width: calc(80% - 2px);
+}
+.slots .input__half__left {
+    width: calc(55% - 2px);
+    float: left;
+    position: relative;
+    top: -10px;
+}
+.slots .input__half__right {
+    width: calc(55% - 2px);
+    float: right;
+    position: relative;
+    top: -10px;
+}
+.slots__button {
+    padding-bottom: 10px;
+    position: relative;
+    top: 25px;
+}
+.slots__button__p a {
+    color: #F05F71;
+    padding: 5px 40px;
+    min-width: 20px;
+}
+.slots__button__p i {
+    color: grey;
+    margin-right: 10px;
+}
+/************************************
+            images upload html
+************************************/
+
+.upload input {
+    background-image: url(../images/cloud.ico);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px 5px;
+    text-indent: 60px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 2s;
+    transition: all 0.2s;
+}
+.upload input:focus {
+    background-image: none;
+}
+.upload__button {
+    padding-bottom: 10px;
+    position: relative;
+    top: 25px;
+}
+.upload__button__p a {
+    color: #F05F71;
+}
+.upload__button__p i {
+    color: grey;
+    margin-right: 10px;
+}
+/*******************************************
+            activity complete html
+*******************************************/
+
+.activityComplete__div {
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #888888;
+}
+.activityComplete__hr {
+    width: inherit;
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+.activityComplete__img__background {
+    width: 200px;
+    margin-left: 15px;
+}
+.activityComplete__div__p {
+    margin-left: 120px;
+}
+@media (max-width: 479px) {
+    .activityComplete__div__div {
+        background-color: white;
+        width: 93vw;
+        margin-left: 4%;
+        font-size: .7em;
+        padding: 4px 4px;
+    }
+    
+    .activityComlplete__p__head {
+        font-size: .7em;
+        margin-top: 10px;
+    }
+    
+    .activityComlplete__p {
+        font-size: .7em;
+        font-weight: bold;
+    }
+    
+    .activityComlplete__p__pink {
+        font-size: 1em;
+        color: #F05F71;
+        margin-bottom: 1px;
+    }
+    
+    .activityComplete__img {
+        width: 120px;
+        float: left;
+    }
+}
+@media (min-width: 480px) {
+    .activityComplete__div__div {
+        background-color: white;
+        width: 70vw;
+        margin-left: 15%;
+    }
+    
+    .activityComlplete__p__head {
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    
+    .activityComlplete__p {
+        font-size: 1.2em;
+    }
+    
+    .activityComlplete__p__pink {
+        font-size: .9em;
+        color: #F05F71;
+        word-spacing: 3px;
+        letter-spacing: 3px;
+    }
+    
+    .activityComplete__img {
+        width: 250px;
+        float: left;
+        padding: 5px 4px;
+    }
+}
+/********************************************
+        scecify availability html
+********************************************/
+/*****  calender ******/
+
+.calender {
+    /*background-color: #cdcdcd;*/
+    
+    padding: 0;
+    box-shadow: 2px 2px 1px #888888;
+}
+.calender div {
+    padding: 0px 4px;
+}
+.calender__head {
+    background-color: #00FFFF;
+}
+.calender__body {
+    padding: 1px;
+    padding-left: 16px;
+    display: block;
+}
+.calender__dates__date,
+.calender__dates__label {
+    background-color: white;
+    font-size: .6em;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+}
+.calender__dates__status {
+    background-color: white;
+    font-size: .6em;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    height: 36px;
+}
+.calender__dates__date p,
+.calender__dates__label p {
+    margin: 0px;
+}
+.calender__dates__label__time {
+    height: 1vw;
+}
+.calender__dates__pills {
+    padding: 1px;
+    margin-left: 0px;
+}
+.calender__dates__pill {
+    border: 1px solid green;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: green;
+}
+.calender__foot {
+    font-size: .7em;
+    background-color: white;
+}
+.calender__arrows {
+    width: 24px;
+}
+.calender p {
+    margin-bottom: 0px;
+}
+/*****  calender ******/
+/***********************************************
+            booking complete html
+***********************************************/
+
+.white-background {
+    background-color: white;
+    font-size: .5em;
+    width: 40vw;
+    float: left;
+}
+/**********************************************
+            new booking html
+**********************************************/
+
+.detailCalender__border {
+    border: 2px solid #00FFFF;
+}
+.detailCalender__div {
+    padding: 0px;
+}
+.detailCalender__head__left,
+.detailCalender__body__left {
+    background-color: #00FFFF;
+    color: white;
+}
+.detailCalender__head__left {
+    border-bottom: 1px solid white;
+}
+.detailCalender__head__right i,
+.detailCalender__body__right p,
+.detailCalender__body__right h3 {
+    background-color: white;
+    color: #00FFFF;
+}
+.detailCalender__head {
+    font-size: .6em;
+    font-weight: bolder;
+    background: linear-gradient(rgb(0, 0, 0, .5));
+    background: -moz-linear-gradient(rgb(0, 0, 0, .5));
+    background: -webkit-linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5));
+}
+.detailCalender__body p {
+    font-size: .6em;
+}
+.addTraveller {
+    border: 2px solid #cdcdcd;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    right: 16px;
+}
+.addTraveller__add {
+    background-color: #00FFFF;
+    color: white;
+    float: left;
+    padding: 0px 2px;
+}
+.addTraveller__sub {
+    background-color: white;
+    color: #00FFFF;
+    float: right;
+    padding: 0px 2px;
+}
+.newBooking {
+    padding: 1px 4px;
+}
+.newBooking p {
+    padding: 1px 4px;
+}
+.newBooking input {
+    width: calc(80% - 2px);
+    position: relative;
+    left: 16px;
+}
+.newBooking__input {
+    width: calc(94% - 3px) !important;
+    position: relative;
+    left: 16px;
+}
+.padding__remove {
+    padding: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    position: relative;
+    right: -15px;
+}
